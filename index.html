@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/figure.svg"/>
+    <title>Checkers Play</title>
+
+    <link rel="stylesheet" type="text/css" href="chess_v.1.7.css">
+    <script src="functions_v.1.7.js"></script>
+    <script src="chess_v.1.7.js"></script>
+</head>
+<body>
+    <header>
+        <div id="reset">RESET BOARD</div>
+    </header>
+    <div data-board>
+        <div class="board_border"></div>
+        <div class="board_border">A</div>
+        <div class="board_border">B</div>
+        <div class="board_border">C</div>
+        <div class="board_border">D</div>
+        <div class="board_border">E</div>
+        <div class="board_border">F</div>
+        <div class="board_border">G</div>
+        <div class="board_border">H</div>
+        <div class="board_border"></div>
+    <!-- --8-- -->
+        <div class="board_border">8</div>
+        <div data-cell data-x="1" data-y="8" data-cell-white data-a8 class="cell_white"></div>
+        <div data-cell data-x="2" data-y="8" data-cell-black data-b8 class="cell_black"></div>
+        <div data-cell data-x="3" data-y="8" data-cell-white data-c8 class="cell_white"></div>
+        <div data-cell data-x="4" data-y="8" data-cell-black data-d8 class="cell_black"></div>
+        <div data-cell data-x="5" data-y="8" data-cell-white data-e8 class="cell_white"></div>
+        <div data-cell data-x="6" data-y="8" data-cell-black data-f8 class="cell_black"></div>
+        <div data-cell data-x="7" data-y="8" data-cell-white data-g8 class="cell_white"></div>
+        <div data-cell data-x="8" data-y="8" data-cell-black data-h8 class="cell_black"></div>
+        <div class="board_border">8</div>
+    <!-- --7-- -->
+        <div class="board_border">7</div>
+        <div data-cell data-x="1" data-y="7" data-cell-black data-a7 class="cell_black"></div>
+        <div data-cell data-x="2" data-y="7" data-cell-white data-b7 class="cell_white"></div>
+        <div data-cell data-x="3" data-y="7" data-cell-black data-c7 class="cell_black"></div>
+        <div data-cell data-x="4" data-y="7" data-cell-white data-d7 class="cell_white"></div>
+        <div data-cell data-x="5" data-y="7" data-cell-black data-e7 class="cell_black"></div>
+        <div data-cell data-x="6" data-y="7" data-cell-white data-f7 class="cell_white"></div>
+        <div data-cell data-x="7" data-y="7" data-cell-black data-g7 class="cell_black"></div>
+        <div data-cell data-x="8" data-y="7" data-cell-white data-h7 class="cell_white"></div>
+        <div class="board_border">7</div>
+    <!-- --6-- -->
+        <div class="board_border">6</div>
+        <div data-cell data-x="1" data-y="6" data-cell-white data-a6 class="cell_white"></div>
+        <div data-cell data-x="2" data-y="6" data-cell-black data-b6 class="cell_black"></div>
+        <div data-cell data-x="3" data-y="6" data-cell-white data-c6 class="cell_white"></div>
+        <div data-cell data-x="4" data-y="6" data-cell-black data-d6 class="cell_black"></div>
+        <div data-cell data-x="5" data-y="6" data-cell-white data-e6 class="cell_white"></div>
+        <div data-cell data-x="6" data-y="6" data-cell-black data-f6 class="cell_black"></div>
+        <div data-cell data-x="7" data-y="6" data-cell-white data-g6 class="cell_white"></div>
+        <div data-cell data-x="8" data-y="6" data-cell-black data-h6 class="cell_black"></div>
+        <div class="board_border">6</div>
+    <!-- --5-- -->
+        <div class="board_border">5</div>
+        <div data-cell data-x="1" data-y="5" data-cell-black data-a5 class="cell_black"></div>
+        <div data-cell data-x="2" data-y="5" data-cell-white data-b5 class="cell_white"></div>
+        <div data-cell data-x="3" data-y="5" data-cell-black data-c5 class="cell_black"></div>
+        <div data-cell data-x="4" data-y="5" data-cell-white data-d5 class="cell_white"></div>
+        <div data-cell data-x="5" data-y="5" data-cell-black data-e5 class="cell_black"></div>
+        <div data-cell data-x="6" data-y="5" data-cell-white data-f5 class="cell_white"></div>
+        <div data-cell data-x="7" data-y="5" data-cell-black data-g5 class="cell_black"></div>
+        <div data-cell data-x="8" data-y="5" data-cell-white data-h5 class="cell_white"></div>
+        <div class="board_border">5</div>
+    <!-- --4-- -->
+        <div class="board_border">4</div>
+        <div data-cell data-x="1" data-y="4" data-cell-white data-a4 class="cell_white"></div>
+        <div data-cell data-x="2" data-y="4" data-cell-black data-b4 class="cell_black"></div>
+        <div data-cell data-x="3" data-y="4" data-cell-white data-c4 class="cell_white"></div>
+        <div data-cell data-x="4" data-y="4" data-cell-black data-d4 class="cell_black"></div>
+        <div data-cell data-x="5" data-y="4" data-cell-white data-e4 class="cell_white"></div>
+        <div data-cell data-x="6" data-y="4" data-cell-black data-f4 class="cell_black"></div>
+        <div data-cell data-x="7" data-y="4" data-cell-white data-g4 class="cell_white"></div>
+        <div data-cell data-x="8" data-y="4" data-cell-black data-h4 class="cell_black"></div>
+        <div class="board_border">4</div>
+    <!-- --3-- -->
+        <div class="board_border">3</div>
+        <div data-cell data-x="1" data-y="3" data-cell-black data-a3 class="cell_black"></div>
+        <div data-cell data-x="2" data-y="3" data-cell-white data-b3 class="cell_white"></div>
+        <div data-cell data-x="3" data-y="3" data-cell-black data-c3 class="cell_black"></div>
+        <div data-cell data-x="4" data-y="3" data-cell-white data-d3 class="cell_white"></div>
+        <div data-cell data-x="5" data-y="3" data-cell-black data-e3 class="cell_black"></div>
+        <div data-cell data-x="6" data-y="3" data-cell-white data-f3 class="cell_white"></div>
+        <div data-cell data-x="7" data-y="3" data-cell-black data-g3 class="cell_black"></div>
+        <div data-cell data-x="8" data-y="3" data-cell-white data-h3 class="cell_white"></div>
+        <div class="board_border">3</div>
+    <!-- --2-- -->
+        <div class="board_border">2</div>
+        <div data-cell data-x="1" data-y="2" data-cell-white data-a2 class="cell_white"></div>
+        <div data-cell data-x="2" data-y="2" data-cell-black data-b2 class="cell_black"></div>
+        <div data-cell data-x="3" data-y="2" data-cell-white data-c2 class="cell_white"></div>
+        <div data-cell data-x="4" data-y="2" data-cell-black data-d2 class="cell_black"></div>
+        <div data-cell data-x="5" data-y="2" data-cell-white data-e2 class="cell_white"></div>
+        <div data-cell data-x="6" data-y="2" data-cell-black data-f2 class="cell_black"></div>
+        <div data-cell data-x="7" data-y="2" data-cell-white data-g2 class="cell_white"></div>
+        <div data-cell data-x="8" data-y="2" data-cell-black data-h2 class="cell_black"></div>
+        <div class="board_border">2</div>
+<!-- --1-- -->
+        <div class="board_border">1</div>
+        <div data-cell data-x="1" data-y="1" data-cell-black data-a1 class="cell_black"></div>
+        <div data-cell data-x="2" data-y="1" data-cell-white data-b1 class="cell_white"></div>
+        <div data-cell data-x="3" data-y="1" data-cell-black data-c1 class="cell_black"></div>
+        <div data-cell data-x="4" data-y="1" data-cell-white data-d1 class="cell_white"></div>
+        <div data-cell data-x="5" data-y="1" data-cell-black data-e1 class="cell_black"></div>
+        <div data-cell data-x="6" data-y="1" data-cell-white data-f1 class="cell_white"></div>
+        <div data-cell data-x="7" data-y="1" data-cell-black data-g1 class="cell_black"></div>
+        <div data-cell data-x="8" data-y="1" data-cell-white data-h1 class="cell_white"></div>
+        <div class="board_border">1</div>
+        
+        <div class="board_border"></div>
+        <div class="board_border">A</div>
+        <div class="board_border">B</div>
+        <div class="board_border">C</div>
+        <div class="board_border">D</div>
+        <div class="board_border">E</div>
+        <div class="board_border">F</div>
+        <div class="board_border">G</div>
+        <div class="board_border">H</div>
+        <div class="board_border"></div>
+        
+
+    </div>
+</body>
+</html>
+
+<!-- <svg data-checker id="checker">
+    <g><circle style="fill: #668ad4;" cx="5vmin" cy="5vmin" r="4vmin" /></g>
+</svg> -->
